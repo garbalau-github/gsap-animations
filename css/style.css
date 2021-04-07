@@ -1,0 +1,82 @@
+body {
+  height: 100%;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 30%;
+      grid-template-columns: auto 30%;
+  font-family: sans-serif !important;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.line {
+  position: absolute;
+}
+
+main {
+  margin-left: 20%;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+main .content {
+  width: 70%;
+}
+
+main .content h1 {
+  font-size: 3em;
+  position: relative;
+}
+
+main .content h1 span {
+  display: block;
+}
+
+main .content p {
+  font-size: 1.2em;
+  width: 80%;
+  line-height: 1.7em;
+  margin-bottom: 2em;
+}
+
+aside {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/windows.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+img {
+  width: 34%;
+  position: absolute;
+  right: 15%;
+  top: 20%;
+}
+
+a {
+  display: inline-block;
+  background: #B100F2;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em;
+}
+
+span:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 1;
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+}
